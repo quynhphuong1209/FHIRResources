@@ -1,0 +1,499 @@
+{
+    "resourceType": "Bundle",
+    "id": "4e361e54-7f0c-4b22-98c5-8fa3fa680051",
+    "meta": {
+      "lastUpdated": "2024-12-26T11:14:18.530+07:00"
+    },
+    "type": "searchset",
+    "total": 9,
+    "link": [{
+        "relation": "self",
+        "url": "http://localhost:8080/hapi/fhir/Patient/2/$everything"
+      }],
+    "entry": [{
+        "fullUrl": "http://localhost:8080/hapi/fhir/Patient/2",
+        "resource": {
+          "resourceType": "Patient",
+          "id": "2",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-12-26T10:06:31.745+07:00",
+            "source": "#AlggnIWVSgOtpMRh"
+          },
+          "identifier": [{
+              "use": "official",
+              "type": {
+                "coding": [{
+                    "system": "http://terminology.h17.org/CodeSystem/v2-0203",
+                    "code": "C2",
+                    "display": "Citizenship Card"
+                  }],
+                "text": "Căn cước công dân ID"
+              },
+              "system": "https://bocongan.gov.vn/",
+              "value": "012345678910"
+            },
+            {
+              "use": "official",
+              "type": {
+                "coding": [{
+                    "system": "http://terminology.h17.org/CodeSystem/v2-0203",
+                    "code": "PPN",
+                    "display": "Passport number"
+                  }],
+                "text": "Số Hộ chiếu"
+              },
+              "system": "https://bocongan.gov.vn/",
+              "value": "P012345678"
+            },
+            {
+              "use": "official",
+              "type": {
+                "coding": [{
+                    "system": "http://terminology.h17.org/CodeSystem/v2-0203",
+                    "code": "DL",
+                    "display": "Driver's license number"
+                  }],
+                "text": "Số Giấy phép lái xe"
+              },
+              "system": "https://bocongan.gov.vn/",
+              "value": "1234567890"
+            }],
+          "active": true,
+          "name": [{
+              "use": "official",
+              "text": "Đinh Lê Quỳnh Phương",
+              "family": "Đinh",
+              "given": ["Lê Quỳnh Phương"],
+              "prefix": ["Ms."]
+          }],
+          "telecom": [{
+              "system": "email",
+              "value": "phuong@gmail.com",
+              "use": "work"
+          }],
+          "gender": "female",
+          "birthDate": "204-09-12",
+          "address": [{
+              "use": "home",
+              "type": "both",
+              "text": "136 Hồ Tùng Mậu, Bắc Từ Liêm, Hà Nội",
+              "line": ["136 Hồ Tùng Mậu"],
+              "district": "Bắc Từ Liêm",
+              "state": "Hà Nội"
+          }]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      { 
+        "fullUrl": "http://localhost:8080/hapi/fhir/Organization/1", 
+        "resource": { 
+          "resourceType": "Organization", 
+          "id": "1", 
+          "meta": { 
+            "versionId": "1", 
+            "lastUpdated": "2024-12-23T11:07:15.583+07:00", 
+            "source": "#1aRYbW5QYrQHX972" 
+          }, 
+            "identifier": [{ 
+                "use": "official", 
+                "type": { 
+                    "coding": [{ 
+                        "system": "http://terminology.hl7.org/CodeSystem/v2.0203", 
+                        "code": "PRN", 
+                        "display": "Provider number" 
+                    }], 
+                    "text": "Số nhà cung cấp" 
+                }, 
+                "system": "http://moh.gov.vn", 
+                "value": "0123456" 
+            }], 
+            "active": true, 
+            "type": [{ 
+                "coding": [{ 
+                    "system": "http://terminology.hl7.org/CodeSystem/organization.type", 
+                    "code": "prov", 
+                    "display": "Healthcare Provider" 
+                }], 
+                "text": "Nhà cung cấp dịch vụ y tế" 
+            }], 
+            "name": "BV Testing", 
+            "telecom": [{ 
+                "system": "phone", 
+                "value": "0123456789", 
+                "use": "work" 
+            }], 
+            "address": [{ 
+                "use": "work", 
+                "type": "both", 
+                "text": "01 Hồng Hà, P.11, Q.Tân Bình, Tp.HCM", 
+                "line": ["01 Hồng Hà"], 
+                "city": "Tp.HCM", 
+                "country": "VN" }] 
+        }
+      },
+      {
+        "fullUrl": "http://localhost:8080/hapi/fhir/Practitioner/1",
+        "resource": {
+          "resourceType": "Practitioner",
+          "id": "1",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-12-26T11:07:15.583+07:00",
+            "source": "#3hD7b1W5YrQHX982"
+          },
+          "identifier": [{
+              "use": "official",
+              "type": {
+                "coding": [{
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "MD",
+                    "display": "Medical License Number"
+                }],
+                "text": "Số giấy phép hành nghề y"
+              },
+              "system": "http://medicalboard.gov.vn",
+              "value": "MD123456"
+          }],
+          "active": true,
+          "name": [{
+              "use": "official",
+              "text": "Lê Thị A",
+              "family": "Trần",
+              "given": ["Thị A"],
+              "prefix": ["Dr."]
+          }],
+          "telecom": [{
+              "system": "phone",
+              "value": "0987654321",
+              "use": "work"
+            },
+            {
+              "system": "email",
+              "value": "DrLeA@hospital.com",
+              "use": "work"
+            }],
+          "address": [{
+              "use": "work",
+              "type": "both",
+              "text": "123 Đường C, P.12, Q.Bình Thạnh, Tp.HCM",
+              "line": ["123 Đường C"],
+              "city": "Tp.HCM",
+              "country": "VN"
+          }],
+          "gender": "female",
+          "birthDate": "1978-06-20",
+          "qualification": [{
+              "identifier": [{
+                  "use": "official",
+                  "system": "http://medicalboard.gov.vn",
+                  "value": "MD123456"
+              }],
+              "code": {
+                "coding": [{
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "MD",
+                    "display": "Doctor of Medicine"
+                }],
+                "text": "Bác sĩ Y khoa"
+              },
+              "period": {
+                "start": "2000-01-01"
+              },
+              "issuer": {
+                "display": "Medical University of Vietnam"
+              }
+          }],
+          "partOf": { 
+            "reference": "Organization/1", 
+            "display": "BV Testing" 
+          },
+          "search": { 
+            "mode": "match" 
+          }
+        } 
+      },
+      {
+        "fullUrl": "http://localhost:8080/hapi/fhir/Observation/4",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "4",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-12-26T10:57:11.992+07:00",
+            "source": "#1q9D9h0qBijHIgH3"
+          },
+          "status": "final",
+          "category": [{
+              "coding": [{
+                  "system": "http://terminology.h17.org/CodeSystem/observation-category",
+                  "code": "vital-signs",
+                  "display": "Vital Signs"
+              }],
+              "text": "Sinh hiệu"
+          }],
+          "code": {
+            "coding": [{
+                "system": "http://loinc.org",
+                "code": "8302-2",
+                "display": "Body weight"
+            }],
+            "text": "Cân nặng cơ thể"
+          },
+          "subject": {
+            "reference": "Patient/2"
+          },
+          "valueQuantity": {
+            "value": 70,
+            "unit": "kilogram",
+            "system": "http://ucum.org",
+            "code": "kg"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://localhost:8080/hapi/fhir/Observation/3",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "3",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-12-26T10:56:35.177+07:00",
+            "source": "#AtAaKiZmCX5nuNMj"
+          },
+          "status": "final",
+          "category": [{
+              "coding": [{
+                  "system": "http://terminology.h17.org/CodeSystem/observation-category",
+                  "code": "vital-signs",
+                  "display": "Vital Signs"
+                }],
+              "text": "Sinh hiệu"
+          }],
+          "code": {
+            "coding": [{
+                "system": "http://loinc.org",
+                "code": "8302-2",
+                "display": "Body height"
+            }],
+            "text": "Chiều cao cơ thể"
+          },
+          "subject": {
+            "reference": "Patient/2"
+          },
+          "valueQuantity": {
+            "value": 180,
+            "unit": "centimeter",
+            "system": "http://ucum.org",
+            "code": "cm"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://localhost:8080/hapi/fhir/Observation/5",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "5",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-12-30T13:45:00+07:00",
+            "source": "#aBcD1eFgH2iJkLmN"
+          },
+          "status": "final",
+          "category": [{
+              "coding": [{
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "vital-signs",
+                  "display": "Vital Signs"
+              }],
+              "text": "Sinh hiệu"
+          }],
+          "code": {
+            "coding": [{
+                "system": "http://loinc.org",
+                "code": "85354-9",
+                "display": "Blood pressure panel"
+            }],
+            "text": "Huyết áp"
+          },
+          "subject": {
+            "reference": "Patient/2"
+          },
+          "component": [{
+              "code": {
+                "coding": [{
+                    "system": "http://loinc.org",
+                    "code": "8480-6",
+                    "display": "Systolic blood pressure"
+                }],
+                "text": "Huyết áp tâm thu"
+              },
+              "valueQuantity": {
+                "value": 120,
+                "unit": "mmHg",
+                "system": "http://unitsofmeasure.org",
+                "code": "mm[Hg]"
+              }
+            },
+            {
+              "code": {
+                "coding": [{
+                    "system": "http://loinc.org",
+                    "code": "8462-4",
+                    "display": "Diastolic blood pressure"
+                }],
+                "text": "Huyết áp tâm trương"
+              },
+              "valueQuantity": {
+                "value": 80,
+                "unit": "mmHg",
+                "system": "http://unitsofmeasure.org",
+                "code": "mm[Hg]"
+              }
+            }]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://localhost:8080/hapi/fhir/Observation/6",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "6",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-12-30T13:45:00+07:00",
+            "source": "#nOpQrStUvWxYz0aB"
+          },
+          "status": "final",
+          "category": [{
+              "coding": [{
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "vital-signs",
+                  "display": "Vital Signs"
+              }],
+              "text": "Sinh hiệu"
+          }],
+          "code": {
+            "coding": [{
+                "system": "http://loinc.org",
+                "code": "8867-4",
+                "display": "Heart rate"
+            }],
+            "text": "Nhịp mạch"
+          },
+          "subject": {
+            "reference": "Patient/2"
+          },
+          "valueQuantity": {
+            "value": 70,
+            "unit": "beats/minute",
+            "system": "http://unitsofmeasure.org",
+            "code": "/min"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://localhost:8080/hapi/fhir/Observation/7",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "7",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-12-30T13:45:00+07:00",
+            "source": "#cDeFgHiJkLmNoP1q"
+          },
+          "status": "final",
+          "category": [{
+              "coding": [{
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "vital-signs",
+                  "display": "Vital Signs"
+              }],
+              "text": "Sinh hiệu"
+          }],
+          "code": {
+            "coding": [{
+                "system": "http://loinc.org",
+                "code": "59408-5",
+                "display": "Oxygen saturation in Arterial blood by Pulse oximetry"
+            }],
+            "text": "Độ bão hòa Oxy trong máu (SPO2)"
+          },
+          "subject": {
+            "reference": "Patient/2"
+          },
+          "valueQuantity": {
+            "value": 98,
+            "unit": "%",
+            "system": "http://unitsofmeasure.org",
+            "code": "%"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://localhost:8080/hapi/fhir/Condition/8",
+        "resource": {
+          "resourceType": "Condition",
+          "id": "8",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-12-30T13:45:00+07:00",
+            "source": "#rStUvWxYzAbC2dEf"
+          },
+          "clinicalStatus": {
+            "coding": [{
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "code": "active",
+                "display": "Active"
+            }]
+          },
+          "verificationStatus": {
+            "coding": [{
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                "code": "confirmed",
+                "display": "Confirmed"
+            }]
+          },
+          "category": [{
+              "coding": [{
+                  "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                  "code": "encounter-diagnosis",
+                  "display": "Encounter Diagnosis"
+              }]
+          }],
+          "code": {
+            "coding": [{
+                "system": "http://snomed.info/sct",
+                "code": "44054006",
+                "display": "Diabetes mellitus type 2"
+            }],
+            "text": "Bệnh tiểu đường loại 2"
+          },
+          "subject": {
+            "reference": "Patient/2"
+          },
+          "onsetDateTime": "2024-12-01T00:00:00+07:00",
+          "recordedDate": "2024-12-30T00:00:00+07:00"
+        },
+        "search": {
+          "mode": "match"
+        }
+      }  
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "resourceType": "Organization",
+    "identifier": [{
+        "use": "official",
+        "type": {
+            "coding": [{
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                "code": "PRN",
+                "display": "Provider number"
+            }],
+            "text": "Provider number"
+        },
+        "system": "http://moh.gov.vn",
+        "value": "0123456"
+    }],
+    "active": true,
+    "type": [{
+        "coding": [{
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+        }],
+        "text": "Healthcare Provider"
+    }],
+    "name": "BV Testing",
+    "telecom": [{
+        "system": "phone",
+        "value": "0123456789",
+        "use": "work"
+    }],
+    "address": [{
+        "use": "work",
+        "type": "both",
+        "text": "01 Hồng Hà, P.11, Q.Tân Bình, Tp.HCM",
+        "line": ["01 Hồng Hà"],
+        "city": "Tp.HCM",
+        "country": "VN"
+    }]
+}

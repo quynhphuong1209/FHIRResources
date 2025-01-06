@@ -1,0 +1,36 @@
+{
+    "resourceType": "Observation",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ],
+        "text": "Sinh hieu"
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body weight"
+        }
+      ],
+      "text": "Can nang co the"
+    },
+    "valueQuantity": {
+      "value": 70,
+      "unit": "kilogram",
+      "system": "http://ucum.org",
+      "code": "kg"
+    },
+    "subject": {
+      "reference": "Patient/1552"
+    }
+  }
+  

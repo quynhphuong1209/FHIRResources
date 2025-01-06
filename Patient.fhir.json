@@ -1,0 +1,82 @@
+{
+  "resourceType": "Patient",
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "CZ",
+            "display": "Citizenship Card"
+          }
+        ],
+        "text": "Căn cước công dân ID"
+      },
+      "system": "https://bocongan.gov.vn",
+      "value": "012345678910"
+    },
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PPN",
+            "display": "Passport number"
+          }
+        ],
+        "text": "Số hộ chiếu"
+      },
+      "system": "https://bocongan.gov.vn",
+      "value": "P012345678"
+    },
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "DL",
+            "display": "Driver's license number"
+          }
+        ],
+        "text": "Số giấy phép lái xe"
+      },
+      "system": "https://bocongan.gov.vn",
+      "value": "1234567890"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "text": "Tran Duc Hai",
+      "family": "Tran",
+      "given": ["Duc Hai"],
+      "prefix": ["Mr."]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "email",
+      "value": "hai@gmai.com",
+      "use": "work"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "2004-10-19",
+  "address": [
+    {
+      "use": "home",
+      "type": "both",
+      "text": "Uy No, Dong Anh, Ha Noi",
+      "line": ["Uy No"],
+      "district": "Dong Anh",
+      "state": "Ha Noi"
+    }
+  ],
+  "managingOrganization": {
+    "reference": "Organization/1"
+  }
+}
